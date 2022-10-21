@@ -1,0 +1,67 @@
+body {
+    font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+    background-color:grey;
+  }
+  
+  a {
+    color: #00B7FF;
+    text-decoration: none;
+  }
+  
+  .center {
+    text-align: center;
+   
+  }
+  
+  p{
+    font-size: 25px;
+  }
+  
+  .resize{
+    max-width: 20%;
+    height: auto;
+    float:left
+  }
+  
+  input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 3px solid grey; 
+    margin-top: 6px; 
+  }
+  
+  input[type=submit] {
+    background-color: grey;
+    color: white;
+    padding: 12px 20px;
+  }
+  
+  input[type=submit]:hover {
+    background-color:black;
+  }
+  
+  .addcolor {
+    border-radius: 5px;
+    background-color: white;
+    padding: 20px;
+  }
+  
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .conlink{
+    display: inline;
+    padding-left: 10px;
+    margin-top:auto;
+  }
+  
+  .resize1{
+    width: 146px;
+    height: auto;
+    float: left;
+    margin-left: 10px;
+    margin-bottom: 30px;
+  }

@@ -1,0 +1,106 @@
+  <!-- if title page is selected then it will display data on home page-->
+  <% if (title == "Home") { %>
+    <div class = "center">
+              <h1> Hi my name is Kevin Tran</h1>
+      <p>Student/Software engineer<p>
+      <img src="\Assets\images\Pfp.png" alt="Home Picture"
+      width = "300"
+      height="300">
+      <br><br>
+     
+      <a class="border1" class="nav-link active text success" aria-current="page" href="/about"> More About Me </a>
+                <% } else { %> 
+                <% } %>
+    </div>
+           <!--If page title is selected about me then this info will be displayed-->
+           <% if (title == "About Me") { %>
+            <img class = "resize"src="Assets/images/headshot.png" alt="Headshot Picture" width="300">
+          <img style="float:right;"class = "resize"src="Assets/images/setup.png" alt="Setup Picture"width="625"height="500">
+          <p>Hello! My name is Kevin Tran. I am currently enrolled in "Software Engineering Technology" at Centennial College and in 3rd semester.
+          I started programming in grade 10 starting with visual basic, as time went on I learned more about coding and langauges through highschool and
+          doing my own research and learning outside of school. After grade 10 in school I did java in grade 11 and grade 12. In grade 11 is when I
+          decided I wanted to go into a field that involved programming because I found it to be fun. In Centennial college it have fell more in love
+          with programming because they have given me the chance to code with others and learn some subjects more in dept then I could teach myself
+          I have learned on my own time they I will most likely want to become mobile dev because the most fun ive had learning a on my own so far
+          was when I was trying to learn kotlin in summer of 2021. So far some langauges that I have learned and  trying doing are Java, C#, HTML, CSS. 
+          Javascript, Sql, and some kotlin</p>
+          <p>some things I enjoy doing on my free time is playing games and watching shows. When I am on my freetime I tend to
+          think about some real world issues I could try solving with code usally they don't go well because I lack the knowledge of how to
+          do certain things but whenever I try and code somthing new it is always a nice learning expirece and is fun.</p>
+    <div class = center>
+          <a href="Assets/images/Kevin Resume.pdf" style="font-size:25px" download="Kevin Tran Resume">Resume Download</a>
+          <% } else { %> 
+                <% } %>
+    </div>
+    <!--if Contact page is selected then all this will display on contact page-->
+     <% if (title == "Contact") { %> 
+       <div class=addcolor>  
+      <form action="/home" enctype="text/plain">
+        <label for="fname">First Name</label>
+        <input type="text" id="fname" name="firstname" placeholder="Your name..">
+        <label for="lname">Last Name</label>
+        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+        <label for="subject">Subject</label>
+        <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+        <input type="submit" value="submit">
+      </form>
+      <ul>
+      <li class="conlink"><a href="tel:+6479656129"><i class="fas fa-lg fa-phone-volume"></i>Call me at +647-965-6129</a>
+      <li class="conlink"><a href="https://github.com/ktran4528"><i class="fab fa-lg fa-github"></i></i>Github</a>
+      </ul>
+      <br>
+    </div>
+    <% } else { %> 
+                <% } %>
+    <!-- If the services page is selected then this info will be displayed-->
+                 <% if (title == "Services") { %> 
+        <h2 style="color:pink;">What can I do?</h2>
+        <p> I know Java, HTML, CSS, Javascript, C#, Kotlin</p>
+        <ul>  
+        <li><img class="resize1" src="Assets/images/java.png" alt="java"><li>
+        <li><img class = "resize1"src="Assets/images/html.png" alt="html"><li>
+        <li><img class = "resize1"src="Assets/images/css.png" alt="css"><li>
+        <li><img class = "resize1"src="Assets/images/js.png" alt="js"><li>
+        <li><img class = "resize1"src="Assets/images/csharp.png" alt="csharp"><li>
+        <li><img class = "resize1"src="Assets/images/kotlin.png" alt="kotlin"><li>
+        </ul>
+     
+    <h2 style="margin-top:300px;color:pink">What can I use my skills for?<h2>
+    <p>Software Engineer</p>
+    <p> I can build web apps and do android programming
+    and build applications</p>
+    <% } else { %> 
+     <% } %>
+    <!-- if the project page is selected then display this information on projects page-->
+     <% if (title == "Projects") { %> 
+    <div class="card-group">
+      <div class="card">
+        <img src="Assets\images\milega.png" class="card-img-top" alt="Mileage calculator">
+        <div class="card-body">
+          <h5 class="card-title">Mileage Calculatorr</h5>
+          <p class="card-text">Can calculate farenheight to kalvin and celsius or celsius to kalvin and farenheight or kalvin to celsius and farenheight.
+        built in eclipse using java</p>
+          
+        </div>
+      </div>
+      <div class="card">
+        <img src="Assets\images\tempConvert.png" class="card-img-top" alt="Temp Conveter">
+        <div class="card-body">
+          <h5 class="card-title">Temp Converter</h5>
+          <p class="card-text">Can calculate farenheight to kalvin and celsius or celsius to kalvin and farenheight or kalvin to celsius and farenheight.
+        built in eclipse using java<</p>
+     
+        </div>
+      </div>
+      <div class="card">
+        <img src="Assets\images\realestate.png" class="card-img-top" alt="Real-Estate">
+        <div class="card-body">
+          <h5 class="card-title">Real Estate</h5>
+          <p class="card-text">Created a realestate website for my self in first year in college it is able to show pricing of each house
+            and who the realestate owner is.
+          </p>
+        </div>
+      </div>
+    </div>
+     <% } else { %> 
+     <% } %>
